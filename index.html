@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guess My Number...</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/apple-touch-icon.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <div class="head">
+        Guess My Number...
+    </div>
+    
+    <div class="container">
+
+        <div id="game">
+
+            <h3>
+                I am thinking of a number between 1-100
+                <br>
+                Can you guss it?
+            </h3>
+
+            <div class="input">
+
+                <input type="number" placeholder="00" id="guess">
+                <button id="checkBtn">Guess</button>
+
+            </div>
+
+            <p class="no-of-gusses">No. of Gusses : 0</p>
+            <p class="guessed-nums">Guessed Numbers are : None</p>
+
+        </div>
+
+        <button id="restart">Restart</button>
+        <div class="result">
+            <div class="hint"></div>
+        </div>
+
+    </div>
+
+    <div class="me">Created By Jitendriya Meher</div>
+
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

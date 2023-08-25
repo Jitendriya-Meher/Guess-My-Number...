@@ -1,0 +1,145 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    background: #3c6fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.head{
+    position: absolute;
+    top: 10%;
+    background-color: #fff;
+    padding: 1em 3em;
+    border-radius: 0.5em;
+    box-shadow: -0.8em -0.8em #202020;
+    text-align: center;
+    font-size: 17px;
+}
+
+.container{
+    width: min(90%,31.25rem);
+    position: relative;
+    top: 3%;
+    background-color: #fff;
+    padding: 4em 2em;
+    border-radius: 0.5em;
+    box-shadow: -1.5em -1.5em #202020;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 2em;
+    color: #303030;
+}
+
+.input{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1em;
+    margin: 3em auto 1.5em auto;
+}
+
+input[type="number"]{
+    width: 100%;
+    padding: 1em;
+    font-size: 1.2em;
+    text-align: center;
+    border: 2px solid #adaeae;
+    border-radius: 0.3em;
+    outline: none;
+    appearance: text-filed;
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"]:focus{
+    border-color: #3c6fff;
+}
+
+button{
+    font-size: 1em;
+    background-color: #3c6fff;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 0.5em;
+    font-weight: 500;
+    cursor: pointer;
+
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+button:active{
+    transform: scale(0.9);
+    font-size: 1.3em;
+}
+
+#restart{
+    margin: 0 auto;
+    padding: 0.8em 1em;
+    display: none;
+}
+
+.result{
+    margin-top: 1em;
+}
+
+p{
+    font-size: 1em;
+    font-weight: 400;
+    color: #565b70;
+    word-break: break-all;
+}
+
+.error,
+.success{
+    padding: 0.5em 0;
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+    animation: pop 0.4s forwards;
+}
+
+.error{
+    background-color: #ffcbcb;
+    color: #ff3e3e;
+}
+
+.success{
+    background-color: #b9ffd5;
+    color: #05c451;
+}
+
+@keyframes pop{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.me{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    color: #fff;
+    font-size: 18px;
+}
